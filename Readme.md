@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Нигина Зарипова](https://up.htmlacademy.ru/htmlcss-individual/1/user/2375987).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 
