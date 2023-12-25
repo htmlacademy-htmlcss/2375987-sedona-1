@@ -59,6 +59,7 @@
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
+            <!--legend всегда fieldset-->
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -86,23 +87,30 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio"  value="hotel" checked>
+                  <input class="control-input" type="radio" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio"  value="hotel">
+                  <input class="control-input" type="radio" value="hotel">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio"  value="hotel">
+                  <input class="control-input" type="radio" value="hotel">
                   Апартаменты
                 </label>
               </li>
             </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <input placeholder="от" type="number">
+            <input placeholder="до" type="number">
+            <input type="range" min="0" max="9000">
+            <!--ползунок-->
           </fieldset>
           <button class="button-submit" type="submit">Применить</button>
           <button class="button-reset" type="reset">Сбросить</button>
