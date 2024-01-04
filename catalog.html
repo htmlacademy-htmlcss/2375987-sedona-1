@@ -40,6 +40,7 @@
         <button class="navigation-button" type="button">Хочу сюда!</button>
       </nav>
     </header>
+
     <!--main-->
     <main class="main-inner">
       <div class="header">
@@ -59,7 +60,6 @@
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <!--legend всегда fieldset-->
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -110,16 +110,13 @@
             <input placeholder="от" type="number">
             <input placeholder="до" type="number">
             <input type="range" min="0" max="9000">
-            <!--ползунок-->
           </fieldset>
           <button class="button-submit" type="submit">Применить</button>
           <button class="button-reset" type="reset">Сбросить</button>
-          <!--reset сбрасывает выбранные значения-->
         </form>
         <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
         <p class="search-results">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
-          <!--задается варианты ответов-->
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
@@ -132,10 +129,11 @@
         <a class="button" href="#">
           <span class="visually-hidden">Показать списком</span>
         </a>
+
         <!--Гостиницы-->
         <ul class="hotel-list">
+
           <li class="hotel-card">
-            <!--первая карточка-->
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-img" src="#" alt="Красивая пещера">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -146,8 +144,8 @@
             <a class="hotel-card-button-blue" href="#">в избранное</a>
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
+
           <li class="hotel-card">
-            <!--вторая карточка-->
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-img" src="#" alt="Горы с радугой">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -158,8 +156,8 @@
             <a class="hotel-card-button-green" href="#">в избранном</a>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
+
           <li class="hotel-card">
-            <!--третья карточка-->
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-img" src="#" alt="Красивые горы днем">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -170,8 +168,8 @@
             <a class="hotel-card-button-blue" href="#">в избранное</a>
             <span class="hotel-rating">Рейтинг: 6,9</span>
           </li>
+
           <li class="hotel-card">
-            <!--четвертая карточка-->
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-img" src="#" alt="Красивые горы ночью">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -184,9 +182,9 @@
           </li>
         </ul>
       </section>
+      
       <ol class="pagination">
-        <!-- делаем пагинацию с помощью списка-->
-        <li class="pagination-item">  
+        <li class="pagination-item">
           <a class="pagination-link" href="#">1</a>
         </li>
         <li class="pagination-item">
@@ -202,9 +200,9 @@
           <a class="pagination-link" href="#">...</a>
         </li>
         <li class="pagination-item" value="10">10</li>
-        <!--мы ставим value-->
       </ol>
     </main>
+
     <!--footer-->
     <footer class="page-footer">
       <section class="newsletter">
@@ -237,6 +235,7 @@
           </li>
         </ul>
       </section>
+
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <address class="contacts-adress">
