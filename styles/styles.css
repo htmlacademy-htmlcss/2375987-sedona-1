@@ -57,3 +57,26 @@ width: 160px;
   background-color: rgb(28, 38, 67);
   background-size: 100% auto;
 }
+.advantages-header {
+  text-align: center;
+}
+
+.slogan{
+font-family: "PT Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+color:  #333;
+text-align: center;
+}
+.class {
+background: #82B3D3;
+font-family: "PT Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 116.667% */
+text-transform: uppercase;
+}
+
