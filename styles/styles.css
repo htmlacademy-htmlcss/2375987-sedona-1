@@ -76,6 +76,10 @@ body {
   text-align: center;
 }
 
+.advantages-title {
+  text-transform: uppercase;
+}
+
 .advantages-header {
   font-family: "PT Sans"sans-serif;
   font-size: 22px;
@@ -105,17 +109,17 @@ body {
   text-align: center;
 }
 
-.background-basic-1 {
+.advantages-item-color-1 {
   background: var(--Background-second-1, rgba(131, 179, 211, 0.12));
   text-align: center;
 }
 
-.background-basic-2 {
+.advantages-item-color-2 {
   background: var(--Background-second-2, rgba(131, 179, 211, 0.20));
   text-align: center;
 }
 
-.title-services {
+.title {
   font-family: "PT Sans";
   font-size: 30px;
   font-style: normal;
@@ -135,17 +139,58 @@ body {
   color: var(--Texts-second, #333);
   text-align: center;
 }
+
+.services-title {
+  text-transform: uppercase;
+}
+
 .services-description {
   font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  text-align: center;
 }
+
 .services-item {
   background: var(--Background-second-1, rgba(131, 179, 211, 0.12));
   text-align: center;
 }
-.services-item-white{
+
+.services-item-white {
   text-align: center;
 }
+
+.promo-bunner {
+font-family: "PT Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+text-transform: uppercase;
+color: var(--Texts-Texts-basic, #000);
+text-align: center;
+}
+.promo-text {
+  font-family: "PT Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--Texts-second, #333);
+  text-align: center;
+}
+.button-button-all {
+text-align: center;
+font-family: "PT Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+text-transform: uppercase;
+border-radius: 4px;
+background: var(--Buttons-basic, #756157);
+color: var(--Texts-background-deafault, #FFF);
+}
+
