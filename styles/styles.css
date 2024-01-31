@@ -65,6 +65,10 @@ body {
   background-size: 100% auto;
 }
 
+.welcome-img {
+  display: block;
+}
+
 .slogan {
   font-family: "PT Sans"sans-serif;
   font-size: 30px;
@@ -120,7 +124,7 @@ body {
 }
 
 .title {
-  font-family: "PT Sans";
+  font-family: "Pt Sans"sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -131,7 +135,7 @@ body {
 }
 
 .subtitle-services {
-  font-family: "PT Sans";
+  font-family: "Pt Sans"sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -145,7 +149,7 @@ body {
 }
 
 .services-description {
-  font-family: "PT Sans";
+  font-family: "Pt Sans"sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -163,17 +167,18 @@ body {
 }
 
 .promo-bunner {
-font-family: "PT Sans";
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px;
-text-transform: uppercase;
-color: var(--Texts-Texts-basic, #000);
-text-align: center;
+  font-family: "Pt Sans"sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--Texts-Texts-basic, #000);
+  text-align: center;
 }
+
 .promo-text {
-  font-family: "PT Sans";
+  font-family: "Pt Sans"sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -181,16 +186,76 @@ text-align: center;
   color: var(--Texts-second, #333);
   text-align: center;
 }
+
 .button-button-all {
+  text-align: center;
+  font-family: "Pt Sans"sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: var(--Buttons-basic, #756157);
+  color: var(--Texts-background-deafault, #FFF);
+}
+.newsletter{
+  background-image:url(../images/images/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-color: rgb(28, 38, 67);
+  color: #FFF;
+  background-size: 100% auto;
+}
+.page-footer-title{
+font-family: "PT Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+text-transform: uppercase;
 text-align: center;
+}
+.newsletter-description{
+font-family: "PT Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+color: #FFF;
+text-align: center;
+}
+.newsletter-email{
+  color: var(--basic-black, #000);
+font-family: "PT Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+.button-newsletter-button{
 font-family: "PT Sans";
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
-border-radius: 4px;
-background: var(--Buttons-basic, #756157);
+border-radius: 0px 4px 4px 0px;
+background:  #82B3D3;
 color: var(--Texts-background-deafault, #FFF);
+text-align: center;
 }
 
+.contacts-phone {
+font-family: "PT Sans";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+text-transform: uppercase;
+color: var(--Texts-Texts-basic, #000);
+text-align: center;
+}
+
+.htmlacademy-log{
+  text-align: left;
+}
