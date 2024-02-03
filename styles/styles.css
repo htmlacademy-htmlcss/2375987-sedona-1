@@ -187,16 +187,68 @@ body {
   border-radius: 0px 4px 4px 0px;
   background: #82b3d3;
 }
+
 .contacts-phone {
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   text-transform: uppercase;
-  color:inherit;
+  color: inherit;
   text-align: center;
   text-decoration: none;
 }
 
 .htmlacademy-log {
   text-align: left;
+}
+
+.header {
+  background-image: url(../images/images/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-color: #1c2643;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+
+.breadcrumbs {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.button-submit {
+  background: #82b3d3;
+}
+
+.button-reset {
+  background-color: transparent;
+}
+
+.search-results {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
