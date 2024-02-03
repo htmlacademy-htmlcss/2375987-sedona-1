@@ -134,7 +134,69 @@ body {
 .services-description {
   color: #333333;
 }
+
 .services-item:nth-child(1),
-.services-item:nth-child(3){
-background-color: #83b3d31f;
+.services-item:nth-child(3) {
+  background-color: #83b3d31f;
+}
+
+.promo-bunner {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo-text {
+  color: rgb(51, 51, 51);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.button-all {
+  text-decoration: none;
+}
+
+.newsletter {
+  background-image: url(../images/images/subscribe.jpg);
+  background-size: cover;
+  background-color: #3b5669;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-footer-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter-description {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.newsletter-button {
+  border-radius: 0px 4px 4px 0px;
+  background: #82b3d3;
+}
+.contacts-phone {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  color:inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.htmlacademy-log {
+  text-align: left;
 }
