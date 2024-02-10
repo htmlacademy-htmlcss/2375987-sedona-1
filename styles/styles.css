@@ -34,12 +34,35 @@ body {
 .container {
   margin: 0;
 }
-.
-.navigation {
-  display: flex;
-  align-items: flex-start;
+
+.page-header {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.navigation-logo {
+  display: block;
+  margin: 0;
 
 }
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation-user {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -49,6 +72,7 @@ body {
   text-decoration: none;
   list-style-type: none;
   color: #000000;
+  padding: 20px 16px;
 }
 
 .nobullet {
@@ -71,6 +95,7 @@ body {
 .main-container {
   flex-grow: 1;
 }
+
 .main-bunner {
   background-image: url(../images/images/index-background.jpg);
   background-repeat: no-repeat;
@@ -85,8 +110,9 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages {
@@ -139,7 +165,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color:#000000;
+  color: #000000;
 }
 
 .subtitle-services {
@@ -154,7 +180,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  color:#000000;
+  color: #000000;
 }
 
 .services-description {
@@ -173,7 +199,7 @@ body {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-  color:#000000;
+  color: #000000;
 }
 
 .promo-text {
