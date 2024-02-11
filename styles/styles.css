@@ -326,7 +326,10 @@ body {
 }
 .social{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+.social-item {
+  padding: 1px 10px 1px 10px;
 }
 .contacts-phone {
   font-size: 40px;
