@@ -35,6 +35,7 @@ body {
   margin: 0;
 }
 
+/* navigation */
 .page-header {
   padding-left: 70px;
   padding-right: 70px;
@@ -42,7 +43,8 @@ body {
 
 .navigation-logo {
   display: block;
-  margin: 0;
+  margin: 0px;
+
 }
 
 .navigation {
@@ -99,6 +101,7 @@ body {
   flex-grow: 1;
 }
 
+/* main */
 .welcome-img {
   display: block;
   margin: 0 auto;
@@ -113,6 +116,8 @@ body {
   color: #ffffff;
 }
 
+/* advantages */
+
 .advantages-section-container {
   display: flex;
   flex-direction: column;
@@ -124,7 +129,6 @@ body {
 
 .advantages-section {
   padding: 69px 0px 69px 0px;
-
 }
 
 .slogan {
@@ -191,6 +195,8 @@ body {
   background-color: #82b3d433;
 }
 
+/* services */
+
 .services-container {
   display: flex;
   flex-direction: column;
@@ -249,6 +255,7 @@ body {
   background-color: #83b3d31f;
 }
 
+/* footer */
 .promo-container {
   display: flex;
   flex-direction: column;
@@ -256,10 +263,12 @@ body {
   margin: 0;
   padding: 0;
 }
-.promo{
+
+.promo {
   padding: 96px 304px 96px 304px;
   width: 592px;
 }
+
 .promo-bunner {
   font-size: 30px;
   font-weight: 700;
@@ -324,13 +333,20 @@ body {
   border-radius: 0px 4px 4px 0px;
   background: #82b3d3;
 }
-.social{
+
+/* social */
+.social {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
 }
+
 .social-item {
   padding: 1px 10px 1px 10px;
 }
+
 .contacts-phone {
   font-size: 40px;
   font-weight: 400;
@@ -341,6 +357,12 @@ body {
   text-decoration: none;
 }
 
+.htmlacademy-log {
+  display: block;
+  margin: 0 auto;
+}
+
+/* catalog */
 .header {
   background-image: url(../images/images/filter-background.jpg);
   background-repeat: no-repeat;
@@ -393,6 +415,16 @@ body {
   color: #000000;
 }
 
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  width: 340px;
+height: 438px;
+}
+
 .hotel-card-link {
   text-decoration: none;
 }
@@ -429,6 +461,17 @@ body {
 
 .hotel-card-button-blue {
   background-color: #82b3d3;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pagination-item {
+  width: 60px;
 }
 
 .pagination-link {
