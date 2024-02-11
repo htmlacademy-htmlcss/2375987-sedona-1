@@ -182,7 +182,17 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+.services-list{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.services-item{
+  width: 400px;
+  padding: 80px 85px 80px 85px;
 
+}
 .subtitle-services {
   font-size: 22px;
   font-weight: 400;
