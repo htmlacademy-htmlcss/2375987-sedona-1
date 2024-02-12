@@ -266,7 +266,6 @@ body {
 
 .promo {
   padding: 96px 304px 96px 304px;
-  width: 592px;
 }
 
 .promo-bunner {
@@ -369,6 +368,7 @@ body {
   background-color: #1c2643;
   background-size: cover;
   color: #ffffff;
+  padding: 35px 70px 70px 70px;
 }
 
 .inner-header-title {
@@ -382,7 +382,6 @@ body {
 .breadcrumbs {
   display: flex;
   flex-direction: row;
-
 }
 
 .breadcrumbs {
@@ -397,16 +396,42 @@ body {
   color: inherit;
 }
 
-.catalog-hotels{
-display: flex;
-flex-direction: row;
+.catalog-hotels-filter {
+  display: flex;
+  flex-direction: row;
+  padding: 35px 70px 70px 70px;
 }
+
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-align: left;
   text-transform: capitalize;
+}
+
+.catalog-filter-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.catalog-filter-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
 }
 
 .button-submit {
