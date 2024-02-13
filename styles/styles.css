@@ -433,13 +433,19 @@ body {
   align-items: flex-start;
 
 }
-
+.button-container{
+  display: flex;
+  flex-direction: column;
+}
 .button-submit {
   background: #82b3d3;
+  padding: 8px 50px 8px 50px;
+  margin-bottom:32px;
 }
 
 .button-reset {
   background-color: transparent;
+  padding: 8px 50px 8px 50px;
 }
 
 .search-results {
