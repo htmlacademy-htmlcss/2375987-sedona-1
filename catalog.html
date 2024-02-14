@@ -125,40 +125,41 @@
               <input type="range" min="0" max="9000">
             </fieldset>
             <div class="button-container">
-            <button class="button button-submit button-flex" type="submit">Применить</button>
-            <button class="button button-reset button-flex" type="reset">Сбросить</button>
+              <button class="button button-submit button-flex" type="submit">Применить</button>
+              <button class="button button-reset button-flex" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
+      </div>
+
+      <section class="search">
+        <div class="search-container">
+          <h2 class="search-results">Найдено гостиниц: 38</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+
+          <ul class="icon-list nobullet">
+            <li class="icon-item">
+              <a class="button-light" href="#">
+                <span class="visually-hidden">Показать мелкой плиткой</span>
+              </a>
+            </li>
+
+            <li class="icon-item">
+              <a class="button-light" href="#">
+                <span class="visually-hidden">Показать крупной плиткой</span>
+              </a>
+            </li>
+
+            <li class="icon-item">
+              <a class="button-light" href="#">
+                <span class="visually-hidden">Показать списком</span>
+              </a>
+            </li>
+          </ul>
         </div>
-
-      <section class="search wrapper">
-        <h2 class="search-results">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-
-        <ul class="icon-list nobullet">
-          <li class="icon-item">
-            <a class="button-light" href="#">
-              <span class="visually-hidden">Показать мелкой плиткой</span>
-            </a>
-          </li>
-
-          <li class="icon-item">
-            <a class="button-light" href="#">
-              <span class="visually-hidden">Показать крупной плиткой</span>
-            </a>
-          </li>
-
-          <li class="icon-item">
-            <a class="button-light" href="#">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
-          </li>
-        </ul>
-
         <ul class="hotel-list nobullet">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -238,9 +239,9 @@
     <!--footer-->
     <footer class="page-footer">
       <div class="newsletter-container">
-        <section class="newsletter">
-          <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-description">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+        <section class="newsletter background-none">
+          <h2 class="page-footer-title black-color">Подпишитесь на рассылку</h2>
+          <p class="newsletter-description grey-color">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">Ваш e-mail</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
@@ -278,9 +279,11 @@
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
         </section>
-        <a href="https://htmlacademy.ru/">
-          <img class="htmlacademy-log" src="images/logo/html-academy.svg" alt="Логотип HTML Academy">
-        </a>
+        <section class="logo-html">
+          <a href="https://htmlacademy.ru/">
+            <img class="htmlacademy-log" src="images/logo/html-academy.svg" alt="Логотип HTML Academy">
+          </a>
+        </section>
       </div>
     </footer>
   </div>
