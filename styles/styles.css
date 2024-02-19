@@ -70,6 +70,7 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
+  align-items: center;
 }
 
 .navigation-list {
@@ -181,13 +182,12 @@ body {
 }
 
 .advantages-item {
-  width: 400px;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
-  padding: 0;
   flex-direction: column;
+  min-height: 200px;
 }
+
 
 .advantages-row {
   width: 100%;
@@ -333,7 +333,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding: 0;
   margin-bottom: 20px;
 }
 
@@ -453,7 +452,7 @@ body {
   background-color: #1c2643;
   background-size: cover;
   color: #ffffff;
-  padding: 35px 70px;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
@@ -599,7 +598,6 @@ body {
 
 .hotel-card {
   width: 340px;
-  height: 438px;
 }
 
 .hotel-card-link {
