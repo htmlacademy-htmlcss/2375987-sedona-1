@@ -144,9 +144,8 @@ body {
 }
 
 /* advantages */
-
 .advantages-section {
-  padding: 69px 0px;
+  padding: 69px 70px;
 }
 
 .slogan {
@@ -158,8 +157,6 @@ body {
   display: block;
   margin: 0;
   margin-bottom: 25px;
-  padding-left: 290px;
-  padding-right: 290px;
 }
 
 .text {
@@ -321,7 +318,7 @@ body {
 /* promo */
 
 .promo {
-  padding: 96px 304px;
+  padding: 96px 70px;
   text-align: center;
 }
 
@@ -342,7 +339,7 @@ body {
   line-height: 26px;
   margin: 0;
   padding: 0;
-  margin-bottom: 62px;
+  margin-bottom: 54px;
 }
 
 .button-promo {
@@ -362,7 +359,7 @@ body {
   background-color: #3b5669;
   color: #ffffff;
   text-align: center;
-  padding: 96px 258px 104px;
+  padding: 96px 70px 104px;
 }
 
 
@@ -486,13 +483,26 @@ body {
 
 .heading {
   padding: 0;
+  margin-bottom: 40px;
 }
 
 /* catalog-filter */
 .catalog-hotels-filter {
   display: flex;
   flex-direction: row;
-  padding: 35px 70px 70px;
+  flex-wrap: wrap;
+  gap:70px;
+}
+
+.catalog-filter-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
 }
 
 .catalog-filter-title {
@@ -501,6 +511,7 @@ body {
   line-height: 24px;
   text-align: left;
   text-transform: capitalize;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list {
@@ -517,14 +528,14 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom:16px;
 }
-
-.catalog-filter-group {
+.filter-container{
+  margin-left: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
+}
+.group{
+  margin-right: 70px;
 }
 
 .button-container {
@@ -536,11 +547,13 @@ body {
   background: #82b3d3;
   padding: 8px 50px;
   margin-bottom: 32px;
+  border:0 none;
 }
 
 .button-reset {
   background-color: transparent;
-  padding: 8px 50px 8px 50px;
+  padding: 8px 50px;
+  border:0 none;
 }
 
 /* search wrapper */
@@ -551,7 +564,6 @@ body {
 
 .search-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
 }
