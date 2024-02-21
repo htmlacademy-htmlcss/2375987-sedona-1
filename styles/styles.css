@@ -491,7 +491,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:70px;
+  gap: 70px;
 }
 
 .catalog-filter-group {
@@ -528,13 +528,15 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom:16px;
+  margin-bottom: 16px;
 }
-.filter-container{
+
+.filter-container {
   margin-left: 0;
   display: flex;
 }
-.group{
+
+.group {
   margin-right: 70px;
 }
 
@@ -547,19 +549,19 @@ body {
   background: #82b3d3;
   padding: 8px 50px;
   margin-bottom: 32px;
-  border:0 none;
+  border: 0 none;
 }
 
 .button-reset {
   background-color: transparent;
   padding: 8px 50px;
-  border:0 none;
+  border: 0 none;
 }
 
 /* search wrapper */
 
 .search {
-  padding: 50px 70px 60px 70px;
+  padding: 50px 70px 60px;
 }
 
 .search-container {
@@ -599,21 +601,28 @@ body {
   display: block;
 }
 
-/* hotel-list */
+/* hotel */
 
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-bottom: 80px;
 }
 
 .hotel-card {
-  width: 340px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
 }
 
 .hotel-card-link {
   text-decoration: none;
+
 }
 
 .hotel-card-title {
@@ -626,10 +635,11 @@ body {
 }
 
 .hotel-card-price {
-  text-align: left;
+  margin: 0;
 }
 
 .price {
+  margin: 0;
   text-align: right;
 }
 
@@ -641,15 +651,44 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   background-color: #f2f2f2;
+  margin: 0;
+  margin-left: auto;
+}
+
+.first-hotel {
+  margin-right: 20px;
+}
+
+.second-hotel {
+  margin-right: 20px;
+}
+
+.button-hotel-container {
+  display: flex;
+  align-items: center;
+}
+
+.hotel-card-button {
+  max-width: 140px;
+  max-height: 36px;
+  padding: 8px 50px;
 }
 
 .hotel-card-button-green {
   background-color: #7db54f;
+  max-width: 140px;
+  max-height: 30px;
+  padding: 8px 50px;
+
 }
 
 .hotel-card-button-blue {
   background-color: #82b3d3;
+  max-width: 140px;
+  max-height: 36px;
+  padding: 8px 50px;
 }
+
 
 /* pagination */
 
