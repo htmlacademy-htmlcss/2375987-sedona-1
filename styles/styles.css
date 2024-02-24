@@ -118,8 +118,12 @@ body {
   border-radius: 4px;
   background-color: #756157;
   text-decoration: none;
+  display: inline-block;
+  box-sizing:border-box;
 }
-
+.navigation-button{
+  padding: 8px 34px;
+}
 .main-container {
   flex-grow: 1;
 }
@@ -398,14 +402,6 @@ body {
   align-items: center;
 }
 
-/*
-.fotter-social-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 40px 70px;
-} */
-
 .social {
   display: flex;
   flex-direction: row;
@@ -615,7 +611,6 @@ body {
   width: 300px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 20px;
   gap: 20px;
 }
@@ -633,14 +628,10 @@ body {
   text-align: left;
   margin: 0;
 }
-
-.hotel-card-price {
+.hotel-price-description{
   margin: 0;
-}
-
-.price {
-  margin: 0;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hotel-rating {
@@ -665,28 +656,37 @@ body {
 
 .button-hotel-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .hotel-card-button {
+  width: 100%;
   max-width: 140px;
-  max-height: 36px;
-  padding: 8px 50px;
+  width: 140px;
+  padding: 8px 26px;
+  margin-right: 20px;
+  box-sizing: border-box;
 }
 
 .hotel-card-button-green {
   background-color: #7db54f;
+  width: 100%;
   max-width: 140px;
-  max-height: 30px;
-  padding: 8px 50px;
+  width: 140px;
+  padding: 8px 18px;
+  box-sizing: border-box;
 
-}
+  }
 
 .hotel-card-button-blue {
   background-color: #82b3d3;
+  width: 100%;
   max-width: 140px;
-  max-height: 36px;
-  padding: 8px 50px;
+  width: 140px;
+  padding: 8px 18px;
+  box-sizing: border-box;
 }
 
 
