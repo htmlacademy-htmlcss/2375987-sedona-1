@@ -177,6 +177,7 @@ body {
   line-height: 26px;
   margin: 0;
 }
+/* advantages-list */
 
 .advantages-list {
   margin: 0;
@@ -185,7 +186,7 @@ body {
   flex-wrap: wrap;
 }
 
-.advantages-item {
+ .advantages-item {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -193,10 +194,12 @@ body {
 }
 
 
-.advantages-row {
+.advantages-row{
+  display: flex;
   width: 100%;
   flex-direction: row;
 }
+
 
 .background-basic {
   width: 400px;
