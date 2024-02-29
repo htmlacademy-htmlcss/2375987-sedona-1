@@ -186,7 +186,7 @@ body {
   flex-wrap: wrap;
 }
 
- .advantages-item {
+.advantages-item {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -711,10 +711,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .pagination-link {
@@ -729,15 +726,20 @@ body {
   border-radius: 4px;
   background-color: #82b3d3;
   min-width: 60px;
-  min-height: 60px;
   box-sizing: border-box;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .pagination-current {
   background-color: #f2f2f2;
   color: #000000;
 }
+.pagination-ellipsis{
+  color: #000000;
+  background-color: #ffffff;
 
+}
 .background-none {
   background-image: none;
   background-color: #ffffff;
