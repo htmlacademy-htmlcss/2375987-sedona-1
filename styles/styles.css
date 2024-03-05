@@ -120,6 +120,8 @@ body {
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
+  cursor: pointer;
+  border:none;
 }
 
 .navigation-button {
