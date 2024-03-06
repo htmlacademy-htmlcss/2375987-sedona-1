@@ -121,7 +121,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
-  border:none;
+  border: none;
 }
 
 .navigation-button {
@@ -179,6 +179,7 @@ body {
   line-height: 26px;
   margin: 0;
 }
+
 /* advantages-list */
 
 .advantages-list {
@@ -196,7 +197,7 @@ body {
 }
 
 
-.advantages-row{
+.advantages-row {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -426,10 +427,29 @@ body {
   flex-wrap: wrap;
 }
 
-.social-item {
-  padding: 1px 10px;
-  min-width: 47px;
-  min-height: 40px;
+
+.footer-social-link {
+  display: block;
+  background-color: 000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 16px;
+  width: 47px;
+  height: 40px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+.footer-social-vk {
+  background-image: url(../images/icons/vkontakte.svg);
+}
+
+.footer-social-tw {
+  background-image: url(../images/icons/telegram.svg);
+}
+
+.footer-social-youtube {
+  background-image: url(../images/icons/youtube.svg);
 }
 
 .contacts-phone {
@@ -620,7 +640,7 @@ body {
 
 .hotel-list {
   display: grid;
-  grid-template-columns:repeat(3, 340px);
+  grid-template-columns: repeat(3, 340px);
   margin: 0;
   padding: 0;
   gap: 20px;
@@ -727,11 +747,13 @@ body {
   background-color: #f2f2f2;
   color: #000000;
 }
-.pagination-ellipsis{
+
+.pagination-ellipsis {
   color: #000000;
   background-color: #ffffff;
 
 }
+
 .background-none {
   background-image: none;
   background-color: #ffffff;
