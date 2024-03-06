@@ -603,6 +603,7 @@ body {
   align-items: center;
   margin-bottom: 40px;
   justify-content: space-between;
+  
 }
 
 .search-results {
@@ -617,23 +618,20 @@ body {
 
 .icon-list {
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
 }
 
-.icon-item {
-  padding: 12px 14px 12px;
-}
 
 .icon-item:not(:last-child) {
-  margin-right: 8px;
+  gap:8px;
 }
 
 .button-light {
   min-width: 48px;
   min-height: 48px;
   display: block;
+  padding: 14px 12px;
 }
 
 /* hotel */
