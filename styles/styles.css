@@ -80,16 +80,6 @@ body {
   align-items: center;
 }
 
-.navigation-user {
-  margin-left: auto;
-  margin-right: 20px;
-}
-
-.navigation-user .navigation-link {
-  min-width: 18px;
-  min-height: 18px;
-}
-
 .navigation-link {
   display: block;
   font-size: 20px;
@@ -101,6 +91,29 @@ body {
   list-style-type: none;
   color: #000000;
   padding: 20px 16px;
+}
+.navigation-user {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.navigation-icon{
+ background-repeat: no-repeat;
+ background-position: center;
+ width: 20px;
+ height: 20px;
+ background-size: 18px 18px;
+}
+.search-icon{
+  background-image: url(../images/icons/search.svg);
+}
+.heart-icon{
+  background-image: url(../images/icons/heart.svg);
 }
 
 .nobullet {
