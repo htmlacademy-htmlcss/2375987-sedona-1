@@ -114,8 +114,21 @@ body {
 }
 .heart-icon{
   background-image: url(../images/icons/heart.svg);
+  position: relative;
 }
-
+.favourites-hotels{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  right: -20px;
+  top: 11px;
+  bottom: -11px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: #7db54f;
+  font-size: 10px;
+}
 .nobullet {
   list-style-type: none;
 }
