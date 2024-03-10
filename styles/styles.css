@@ -350,7 +350,28 @@ body {
   margin: 0;
   margin-bottom: 30px;
 }
+.servis-title-icon::before {
+  content: " ";
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin:0 auto;
+  margin-bottom: 30px;
+  width: 75px;
+  height: 72px;
+}
+.servis-title-house::before{
+  background-image: url(../images/icons/house-icon.svg);
 
+}
+.servis-title-eat::before{
+  background-image: url(../images/icons/burger-icon.svg);
+}
+.servis-title-gift::before{
+  background-image: url(../images/icons/gift-icon.svg);
+
+}
 .services-description {
   color: #333333;
   padding: 0;
@@ -712,6 +733,8 @@ body {
   gap: 16px 20px;
   padding: 20px;
   box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .hotel-card-link {
