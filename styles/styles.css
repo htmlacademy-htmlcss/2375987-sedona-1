@@ -205,6 +205,20 @@ body {
   padding: 51px 70px 25px;
 }
 
+.main-bunner::after {
+  content: " ";
+  display: block;
+  background-image: url(../images/icons/ornament-bunner.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 57px;
+  margin-bottom: -25px;
+  margin-left: -70px;
+
+}
+
 /* advantages */
 .advantages-section {
   padding: 69px 70px;
