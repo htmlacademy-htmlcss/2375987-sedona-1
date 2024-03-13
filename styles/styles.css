@@ -62,9 +62,14 @@ body {
   padding-right: 70px;
 }
 
+.link-logo {
+  margin-right: 30px;
+  display: block;
+  margin-bottom: -4px;
+}
+
 .navigation-logo {
   display: block;
-  margin-right: 30px;
 }
 
 .navigation {
@@ -112,8 +117,9 @@ body {
 }
 
 .navigation-user .navigation-link {
-  min-width: 18px;
-  min-height: 18px;
+  width: 44px;
+  height: 64px;
+  padding: 0;
 }
 
 .navigation-icon {
@@ -614,7 +620,8 @@ body {
   width: 13px;
   height: 15px;
 }
-.breadcrumbs-item:not(:last-child)::after{
+
+.breadcrumbs-item:not(:last-child)::after {
   content: "";
   background-image: url(../images/icons/breadcrumbs-arrow.svg);
   background-size: contain;
@@ -625,6 +632,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 .heading {
   padding: 0;
   margin-bottom: 40px;
