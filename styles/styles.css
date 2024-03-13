@@ -105,7 +105,7 @@ body {
   content: "";
   background-color: #756257;
   height: 2px;
-  bottom: -4px;
+  bottom: -2px;
   left: 16px;
   right: 16px;
   ;
@@ -327,17 +327,7 @@ body {
   background-color: #82b3d433;
 }
 
-.decorative-strip-white::after {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 60px;
-  height: 2px;
-  background-color: #ffffff4d;
-}
-
-.decorative-strip-grey::after {
+.decorative-strip::after {
   content: '';
   display: block;
   margin: 0 auto;
@@ -346,7 +336,15 @@ body {
   height: 2px;
   background-color: #0000004d;
 }
-
+.strip-white::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 60px;
+  height: 2px;
+  background-color: #ffffff4d;
+}
 /* services */
 
 .services-container {
@@ -505,6 +503,7 @@ body {
   line-height: 26px;
   text-align: center;
   padding: 0;
+  margin: 0;
   margin-bottom: 54px;
 }
 
@@ -540,29 +539,13 @@ body {
   flex-wrap: wrap;
 }
 
-
-.footer-social-link {
-  display: block;
-  background-color: 000000;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24px 16px;
+.social-item{
   width: 47px;
   height: 40px;
-  padding: 0px 10px;
-  box-sizing: border-box;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.footer-social-vk {
-  background-image: url(../images/icons/vkontakte.svg);
-}
-
-.footer-social-tw {
-  background-image: url(../images/icons/telegram.svg);
-}
-
-.footer-social-youtube {
-  background-image: url(../images/icons/youtube.svg);
 }
 
 .contacts-phone {

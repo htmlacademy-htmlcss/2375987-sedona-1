@@ -13,7 +13,7 @@
     <!--header-->
     <header class="page-header">
       <nav class="navigation">
-        <a href="index.html">
+        <a href="index.html" aria-current="page" class="link-logo">
           <img class="navigation-logo" src="images/logo/sedona-logo.svg" width="140" height="70"
             alt="Логотип города Седоны">
         </a>
@@ -31,17 +31,19 @@
         </ul>
 
         <ul class="navigation-list navigation-user nobullet">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-icon search-icon" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-icon heart-icon" href="#">
-              <span class="visually-hidden">Корзина</span>
-              <span class="favourites-hotels">12</span>
-            </a>
-          </li>
+          <ul class="navigation-list navigation-user nobullet">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-icon search-icon" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-icon heart-icon" href="#">
+                <span class="visually-hidden">Корзина</span>
+                <span class="favourites-hotels">12</span>
+              </a>
+            </li>
+          </ul>
         </ul>
         <button class="button navigation-button" type="button">Хочу сюда!</button>
       </nav>
