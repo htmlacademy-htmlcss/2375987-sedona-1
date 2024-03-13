@@ -576,7 +576,7 @@ body {
   color: #756157;
 }
 
-.contacts-phone:active{
+.contacts-phone:active {
   color: #756157;
   opacity: 0.3;
 }
@@ -596,7 +596,7 @@ body {
 
 .link-htmlacademy:active {
   fill: #756157;
-  opacity:0.3;
+  opacity: 0.3;
 }
 
 /* catalog */
@@ -816,6 +816,18 @@ body {
   background-image: url(../images/icons/list-list.svg);
 }
 
+.button-light:hover {
+  border: 2px solid #000000;
+}
+
+.button-light:focus {
+  border: 2px solid #68a2ca;
+}
+
+.button-light:active {
+  border: 2px solid #000000;
+}
+
 /* hotel */
 
 .hotel-list {
@@ -968,6 +980,18 @@ body {
   color: #000000;
   background-color: #ffffff;
 
+}
+
+.pagination-focus:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-focus:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-focus:active {
+  opacity: 0.3;
 }
 
 .background-none {
