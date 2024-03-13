@@ -336,15 +336,11 @@ body {
   height: 2px;
   background-color: #0000004d;
 }
+
 .strip-white::after {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 60px;
-  height: 2px;
   background-color: #ffffff4d;
 }
+
 /* services */
 
 .services-container {
@@ -539,7 +535,7 @@ body {
   flex-wrap: wrap;
 }
 
-.social-item{
+.social-item {
   width: 47px;
   height: 40px;
   display: flex;
@@ -562,12 +558,9 @@ body {
 
 .logo-html {
   width: 115px;
+  height: 33px;
 }
 
-.htmlacademy-log {
-  display: block;
-  margin: 0 auto;
-}
 
 /* catalog */
 .header {
