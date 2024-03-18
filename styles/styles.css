@@ -187,10 +187,6 @@ body {
   background-color: #615048;
 }
 
-.navigation-button:focus {
-  background-color: #615048;
-}
-
 .navigation-button:active {
   opacity: 0.3;
 }
@@ -293,7 +289,10 @@ body {
   width: 400px;
   padding: 103px 85px;
   box-sizing: border-box;
+  background-color: #82b3d3;
+  color: #ffffff;
 }
+
 
 .advantages_block {
   width: 400px;
@@ -331,10 +330,6 @@ body {
   margin-bottom: 30px;
 }
 
-.background-basic {
-  background-color: #82b3d3;
-  color: #ffffff;
-}
 
 .advantages-item:nth-child(2),
 .advantages-item:nth-child(4) {
@@ -561,15 +556,11 @@ body {
   justify-content: center;
 }
 
-.footer-social-link:hover {
+.footer-social-link svg:hover {
   fill: #68a2ca;
 }
 
-.footer-social-link:focus {
-  fill: #68a2ca;
-}
-
-.footer-social-link:active {
+.footer-social-link svg:active {
   fill: #68a2ca;
   opacity: 0.3;
 }
@@ -590,10 +581,6 @@ body {
   color: #756157;
 }
 
-.contacts-phone:focus {
-  color: #756157;
-}
-
 .contacts-phone:active {
   color: #756157;
   opacity: 0.3;
@@ -604,15 +591,15 @@ body {
   height: 33px;
 }
 
-.link-htmlacademy:hover {
+.link-htmlacademy svg:hover {
   fill: #756157;
 }
 
-.link-htmlacademy:focus {
+.link-htmlacademy svg:focus {
   fill: #756157;
 }
 
-.link-htmlacademy:active {
+.link-htmlacademy svg:active {
   fill: #756157;
   opacity: 0.3;
 }
