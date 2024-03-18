@@ -73,6 +73,10 @@ body {
   position: relative;
 }
 
+.navigation-logo:hover {
+  opacity: 0.7;
+}
+
 .navigation {
   display: flex;
   margin: 0 auto;
@@ -123,6 +127,14 @@ body {
   padding: 0;
 }
 
+.navigation-link:hover {
+  opacity: 0.7;
+}
+
+.navigaton-link:active {
+  opacity: 0.1;
+}
+
 .navigation-icon {
   background-repeat: no-repeat;
   background-position: center;
@@ -155,6 +167,7 @@ body {
   font-size: 10px;
   font-weight: 400;
   text-align: center;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .nobullet {
@@ -178,16 +191,22 @@ body {
   border: none;
 }
 
+.button::before {
+  content: "";
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle
+}
 
 .navigation-button {
   padding: 8px 34px;
 }
 
-.navigation-button:hover {
+.navigation-button:not(:disabled):hover {
   background-color: #615048;
 }
 
-.navigation-button:active {
+.navigation-button:not(:disabled):active {
   opacity: 0.3;
 }
 
@@ -483,6 +502,14 @@ body {
   width: 376px;
 }
 
+.button-promo:not(:disabled):hover {
+  background-color: #615048;
+}
+
+.button-promo:not(:disabled):active {
+  opacity: 0.3;
+}
+
 /* footer */
 
 /* newsletter */
@@ -524,8 +551,21 @@ body {
 
 .newsletter-button {
   border-radius: 0px 4px 4px 0px;
-  background: #82b3d3;
+  background-color: #82b3d3;
   padding: 8px 50px;
+}
+
+.newsletter-button:not(:disabled):hover {
+  background-color: #68a2ca;
+}
+
+.newsletter-button:not(:disabled):active {
+  background-color: #82b3d3;
+  opacity: 0.3;
+}
+
+.newsletter-button:disabled {
+  background-color: #e5e5e5;
 }
 
 /* social */
@@ -592,10 +632,6 @@ body {
 }
 
 .link-htmlacademy svg:hover {
-  fill: #756157;
-}
-
-.link-htmlacademy svg:focus {
   fill: #756157;
 }
 
@@ -673,8 +709,6 @@ body {
 .breadcrumbs-link:hover {
   opacity: 0.6;
 }
-
-/* .breadcrumbs-link:focus {} */
 
 .breadcrumbs-link:active {
   opacity: 0.3;
@@ -756,15 +790,11 @@ body {
   border: 0 none;
 }
 
-.button-submit:hover {
+.button-submit:not(:disabled):hover {
   background-color: #68a2ca;
 }
 
-.button-submit:focus {
-  background: #68a2ca;
-}
-
-.button-submit:active {
+.button-submit:not(:disabled):active {
   background-color: #82b3d3;
   opacity: 0.3;
 }
@@ -779,17 +809,11 @@ body {
   border: 0 none;
 }
 
-.button-reset:hover {
+.button-reset:not(:disabled):hover {
   opacity: 0.6;
 }
 
-.button-reset:focus {
-  box-sizing: border-box;
-  border: 3px solid #83b3d3;
-  border-radius: 4px;
-}
-
-.button-reset:active {
+.button-reset:not(:disabled):active {
   opacity: 0.3;
 }
 
@@ -819,6 +843,38 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+}
+
+.select-control {
+  font-family: inherit;
+  font-size: 18px;
+  color: #000000;
+  appearance: none;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  padding-right: 40px;
+  width: 292px;
+  background-image: url(../images/icons/select-control-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+
+}
+
+.select-control:hover {
+  border-color: #68a2ca;
+}
+
+.select-control:active {
+  border-color: #3f5e72;
+  outline: none;
+}
+
+.select-control:disabled {
+  opacity: 0.3;
+  color: #000000;
+  border-color: #0000004d;
 }
 
 .icon-list {
@@ -871,11 +927,6 @@ body {
   background-color: none;
 }
 
-.button-light:focus {
-  border: 2px solid #68a2ca;
-  background-color: none;
-}
-
 .button-light:active {
   border: 2px solid #000000;
   background-color: none;
@@ -909,6 +960,10 @@ body {
 
 .hotel-card-img {
   object-fit: contain;
+}
+
+.hotel-card-img:hover {
+  opacity: 0.7;
 }
 
 .hotel-card-title {
@@ -979,15 +1034,11 @@ body {
   box-sizing: border-box;
 }
 
-.hotel-card-button:hover {
+.hotel-card-button:not(:disabled):hover {
   background-color: #615048;
 }
 
-.hotel-card-button:focus {
-  background-color: #615048;
-}
-
-.hotel-card-button:active {
+.hotel-card-button:not(:disabled):active {
   opacity: 0.3;
 }
 
@@ -1004,15 +1055,11 @@ body {
   box-sizing: border-box;
 }
 
-.hotel-card-button-green:hover {
+.hotel-card-button-green:not(:disabled):hover {
   background-color: #6c9e42;
 }
 
-.hotel-card-button-green:focus {
-  background-color: #6c9e42;
-}
-
-.hotel-card-button-green:active {
+.hotel-card-button-green:not(:disabled):active {
   opacity: 0.3;
 }
 
@@ -1029,15 +1076,12 @@ body {
   box-sizing: border-box;
 }
 
-.hotel-card-button-blue:hover {
+.hotel-card-button-blue:not(:disabled):hover {
   background-color: #68a2ca;
 }
 
-.hotel-card-button-blue:focus {
-  background: #68a2ca;
-}
 
-.hotel-card-button-blue:active {
+.hotel-card-button-blue:not(:disabled):active {
   background-color: #82b3d3;
   opacity: 0.3;
 }
@@ -1076,10 +1120,25 @@ body {
   color: #000000;
 }
 
+.pagination-current:hover {
+  opacity: 0.7;
+}
+
+.pagination-current:active {
+  opacity: 0.3;
+}
+
 .pagination-ellipsis {
   color: #000000;
   background-color: #ffffff;
+}
 
+.pagination-ellipsis:hover {
+  opacity: 0.7;
+}
+
+.pagination-ellipsis:active {
+  opacity: 0.3;
 }
 
 .pagination-focus:hover {
