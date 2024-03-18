@@ -70,6 +70,7 @@ body {
 
 .navigation-logo {
   display: block;
+  position: relative;
 }
 
 .navigation {
