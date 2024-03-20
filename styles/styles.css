@@ -236,7 +236,7 @@ body {
   text-align: center;
   background-color: #3b5669;
   color: #ffffff;
-  padding: 51px 70px 25px;
+  padding: 51px 70px 0px;
 }
 
 .main-bunner::after {
@@ -248,8 +248,8 @@ body {
   background-repeat: no-repeat;
   width: 1200px;
   height: 57px;
-  margin-bottom: -25px;
-  margin-left: -70px;
+  margin-left: 70px;
+  margin-right: 70px;
 
 }
 
@@ -562,9 +562,11 @@ body {
   border-radius: 4px 0px 0px 4px;
   cursor: pointer;
 }
-.field-color{
+
+.field-color {
   background-color: #f2f2f2;
 }
+
 .newsletter-button {
   border-radius: 0px 4px 4px 0px;
   background-color: #82b3d3;
@@ -777,12 +779,32 @@ body {
 
 .catalog-filter-item {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
   margin-bottom: 16px;
 }
-
+.control-input{
+  appearance: none;
+   display: inline-block;
+   margin: 0;
+   width: 20px;
+   height: 20px;
+   background-color:#ffffff;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   vertical-align: baseline;
+   border-radius: 2px;
+}
+.control-input-checkbox:checked{
+  background-image: url(../images/icons/check-mark.svg);
+  background-size: 12px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.control-input-radio{
+  border-radius: 12px;
+}
 .filter-container {
   margin-left: 0;
   display: flex;
