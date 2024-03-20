@@ -141,9 +141,10 @@
     <footer class="page-footer">
       <section class="newsletter">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-description">Только полезная информация и&nbsp;никакого спама, <span class="text">честное бойскаутское!</span></p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field " placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
