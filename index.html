@@ -141,7 +141,8 @@
     <footer class="page-footer">
       <section class="newsletter">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Только полезная информация и&nbsp;никакого спама, <span class="text">честное бойскаутское!</span></p>
+        <p class="newsletter-description">Только полезная информация и&nbsp;никакого спама, <span class="text">честное
+            бойскаутское!</span></p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
           <input class="field " placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
@@ -204,7 +205,48 @@
         </section>
       </div>
     </footer>
+    <!-- modal -->
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="field-date" for="date-сheck-in">Дата заезда:</label>
+              <input class="auth-form-field field" type="date" id="date-сheck-in" name="date-сheck-in"
+                placeholder="дата" value="27 апреля 2020">
+            </p>
+            <p class="text-field text-color"> Мы не можем отправить вас в прошлое.</p>
+            <p class="field-group">
+              <label class="field-date" for="date-departure">Дата выезда:</label>
+              <input class="auth-form-field field" type="date" id="date-departure" name="date-departure"
+                placeholder="дата" value="1 сентября 2023">
+            </p>
+            <p class="text-field"> На эти даты есть свободные номера. Пока есть.</p>
+          </form>
+          <ul class="model-list">
+            <li class="model-item">
+              <p class="guests">Взрослые:</p>
+              <button type="button-minus">минус</button>
+              <span class="quantity">2</span>
+              <button type="button-plus">плюс</button>
+            </li>
+            <li class="model-item">
+              <p class="guests">Дети:</p>
+              <button type="button-minus">минус</button>
+              <span class="quantity">2</span>
+              <button type="button-plus">плюс</button>
+            </li>
+          </ul>
+          <a class="button" href="#">Найти</a>
+        </section>
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>
