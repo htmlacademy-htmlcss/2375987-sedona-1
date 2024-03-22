@@ -248,8 +248,8 @@ body {
   background-repeat: no-repeat;
   width: 1200px;
   height: 57px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: -70px;
+  margin-right: -70px;
 
 }
 
@@ -750,7 +750,8 @@ body {
   display: flex;
   margin-bottom: 48px;
 }
-.model-item{
+
+.model-item {
   display: flex;
 }
 
@@ -861,6 +862,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0 none;
+  margin-bottom: 16px;
 }
 
 
@@ -945,9 +947,6 @@ body {
   display: flex;
 }
 
-/* .group {
-  margin-right: 70px;
-} */
 
 /* range */
 .range-container {
@@ -955,28 +954,71 @@ body {
   margin-bottom: 36px;
 }
 
+.range-input[type="number"]::-webkit-inner-spin-button,
+.range-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.catalog-filter-label {
+  display: block;
+  background-color: #f2f2f2;
+  position: relative;
+  margin-right: 2px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.catalog-filter-label-right {
+  border-radius: 0px 4px 4px 0px;
+}
+
+
 .range-input {
+  display: block;
   width: 143px;
-  padding: 12px 6px 12px 6px;
+  padding: 12px 20px;
+  padding-right: 40px;
+  box-sizing: border-box;
   color: #000000;
-  font-family: "Pt Sans", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   cursor: pointer;
   border: none;
-  border-radius: 4px 4px 4px 4px;
-  background-color: #f2f2f2;
+  border-radius: 4px 0px 0px 4px;
+  background-color: transparent;
+}
+.range-input-right{
+  border-radius: 0px 4px 4px 0px;
 }
 
-.range-input::placeholder {
-  text-align: right;
+.range-text {
+  position: absolute;
+  content: "";
+  top: 12px;
+  right: 20px;
+  width: 20px;
+  height: 24px;
+  color: rgb(170, 170, 170);
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-
 }
+
+.range-input::placeholder {
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 
 .range-input:hover {
   opacity: 0.6;
