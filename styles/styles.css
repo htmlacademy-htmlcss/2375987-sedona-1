@@ -708,18 +708,48 @@ body {
   font-weight: 700;
   line-height: 36px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .field-group {
   margin: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
 }
 
 .field-date {
+  display: flex;
+  align-items: center;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  margin-right: 24px;
+}
+
+.field-date-departure {
+  margin-right: 18px;
+}
+
+.auth-form-field {
+  margin: 0;
+  padding: 12px 20px 12px 20px;
+  border-radius: 4px;
+  background: #f2f2f2;
+  border: none;
+  width: 440px;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  appearance: none;
+  background-image: url(../images/icons/date.svg);
+  background-repeat: no-repeat;
+  background-position: right 17px center;
 }
 
 .text-field {
@@ -731,17 +761,13 @@ body {
   color: #333333;
   text-align: center;
   margin-bottom: 25px;
+
 }
 
 .text-color {
   color: #ff5757;
 }
 
-.auth-form-field {
-  margin: 0;
-  padding: 0;
-  appearance: none;
-}
 
 .model-list {
   margin: 0;
@@ -749,14 +775,18 @@ body {
   list-style: none;
   display: flex;
   margin-bottom: 48px;
+  justify-content: space-between;
 }
 
 .model-item {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .guests {
   margin: 0;
+  margin-right: 46px;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -764,7 +794,52 @@ body {
   line-height: 24px;
 }
 
+.button-quantity {
+  border: none;
+  background: #f2f2f2;
+  padding: 14px 10px 14px 10px;
+  width: 40px;
+  height: 48px;
+  box-sizing: border-box;
+}
 
+.button-minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.quantity {
+  width: 31px;
+  border: none;
+  background: #f2f2f2;
+  padding: 14px 10px 14px 10px;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.quantity[type="number"]::-webkit-inner-spin-button,
+.quantity[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-modal {
+  border-radius: 10px;
+  background-color: #83b3d3;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 577px;
+  padding: 18px 77px 18px 77px;
+  box-sizing: border-box;
+}
 
 /* catalog */
 .header {
@@ -943,7 +1018,7 @@ body {
 }
 
 .filter-container {
-  margin-left: 70px;
+  margin-left: auto;
   display: flex;
 }
 
@@ -952,16 +1027,13 @@ body {
 .range-container {
   display: flex;
   margin-bottom: 36px;
+  margin-right: 70px;
 }
 
 .range-input[type="number"]::-webkit-inner-spin-button,
 .range-input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.range-input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 .catalog-filter-label {
@@ -993,7 +1065,8 @@ body {
   border-radius: 4px 0px 0px 4px;
   background-color: transparent;
 }
-.range-input-right{
+
+.range-input-right {
   border-radius: 0px 4px 4px 0px;
 }
 
@@ -1021,53 +1094,56 @@ body {
 
 
 .range-input:hover {
-  opacity: 0.6;
+  background-image: #e6e6e6;
 }
 
-.range-input:active {
-  opacity: 0.3;
+.range-input:placeholder-shown {
+  background: #f2f2f2
 }
 
 .range-scale {
   position: relative;
   width: 287px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: grey;
 }
 
 .range-bar {
   position: absolute;
-  width: 60px;
+  width: 226px;
   height: 4px;
-  background-color: grey;
-  right: -40px;
+  background-color: #ffffff;
+  left: 0;
 }
 
 .range-toggle {
   position: absolute;
   border-radius: 5px;
-  background: #ffffff;
+  background-color: #ffffff;
   width: 20px;
   height: 20px;
   border: none;
 }
 
 .toggle-min {
-  left: -267px;
-  top: -8px
+  left: 0px;
+  top: -8px;
 }
 
 .toggle-max {
-  left: -20px;
-  top: -8px
+  right: 0px;
+  top: -8px;
 }
 
 .range-toggle:hover {
-  opacity: 0.6;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
-  opacity: 0.3;
+  border: 2px solid rgb(131, 179, 211);
+  border-radius: 5px;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
 }
 
 .button-container {

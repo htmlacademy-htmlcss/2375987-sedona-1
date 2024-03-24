@@ -216,32 +216,32 @@
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="field-date" for="date-сheck-in">Дата заезда:</label>
-              <input class="auth-form-field field" type="date" id="date-сheck-in" name="date-сheck-in"
-                placeholder="дата" value="27 апреля 2020">
+              <input class="auth-form-field field" type="text" id="date-сheck-in" name="text"
+                placeholder="Укажите дату">
             </p>
             <p class="text-field text-color"> Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
-              <label class="field-date" for="date-departure">Дата выезда:</label>
-              <input class="auth-form-field field" type="date" id="date-departure" name="date-departure"
-                placeholder="дата" value="1 сентября 2023">
+              <label class="field-date field-date-departure" for="date-departure">Дата выезда:</label>
+              <input class="auth-form-field field" type="text" id="date-departure" name="text"
+                placeholder="Укажите дату">
             </p>
             <p class="text-field"> На эти даты есть свободные номера. Пока есть.</p>
           </form>
           <ul class="model-list">
             <li class="model-item">
               <p class="guests">Взрослые:</p>
-              <button type="button-minus">минус</button>
-              <span class="quantity">2</span>
-              <button type="button-plus">плюс</button>
+              <button  class="button-quantity button-minus"type="button">-</button>
+              <input class="quantity" type="number" placeholder="2">
+              <button class="button-quantity button-plus" type="button">+</button>
             </li>
             <li class="model-item">
               <p class="guests">Дети:</p>
-              <button type="button-minus">минус</button>
-              <span class="quantity">2</span>
-              <button type="button-plus">плюс</button>
+              <button class="button-quantity button-minus "type="button">-</button>
+              <input class="quantity" type="number" placeholder="2">
+              <button class="button-quantity button-plus" type="button">+</button>
             </li>
           </ul>
-          <a class="button" href="#">Найти</a>
+          <button  class="button button-modal" type="submit">Найти</button>
         </section>
       </div>
     </div>
