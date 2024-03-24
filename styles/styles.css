@@ -683,6 +683,7 @@ body {
 
 .modal-auth {
   width: 577px;
+  display: flex;
 }
 
 .modal-close-button {
@@ -726,6 +727,10 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  margin-right: 24px;
+}
+
+.field-date {
   margin-right: 24px;
 }
 
@@ -786,7 +791,6 @@ body {
 
 .guests {
   margin: 0;
-  margin-right: 46px;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -794,17 +798,80 @@ body {
   line-height: 24px;
 }
 
+.guests {
+  margin-right: 46px;
+}
+
+.guests-children {
+  margin-right: 10px;
+}
+
 .button-quantity {
   border: none;
-  background: #f2f2f2;
-  padding: 14px 10px 14px 10px;
+  background-color: #f2f2f2;
+  padding: 14px 10px;
   width: 40px;
   height: 48px;
   box-sizing: border-box;
 }
 
+.button-quantity svg {
+  display: block;
+  margin: 0 auto;
+}
+
 .button-minus {
   border-radius: 4px 0 0 4px;
+}
+
+.tooltip {
+  margin-right: 46px;
+  position: relative;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.tooltip-text {
+  border-radius: 10px;
+  background: #333333;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 15px 18px 18px 22px;
+  width: 256px;
+  height: 143px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  left: -115px;
+  bottom: -158px;
+  display: none;
+}
+.tooltip-text::before{
+  position: absolute;
+  top: -15px;
+  right: 120px;
+  width: 19px;
+  height: 9px;
+  background-image: url(../images/icons/tooltip-text.svg);
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: block;
 }
 
 .button-plus {
@@ -822,6 +889,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  z-index: 1;
 }
 
 .quantity[type="number"]::-webkit-inner-spin-button,
