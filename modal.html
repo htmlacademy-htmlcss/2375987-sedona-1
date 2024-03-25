@@ -219,24 +219,26 @@
               <input class="auth-form-field field" type="text" id="date-сheck-in" name="text"
                 placeholder="Укажите дату">
             </p>
-            <p class="text-field text-color">Мы не можем отправить вас в прошлое.</p>
+            <span class="text-error text-error-showed">Мы не можем отправить вас в прошлое.</span>
             <p class="field-group">
               <label class="field-date field-date-departure" for="date-departure">Дата выезда:</label>
               <input class="auth-form-field field" type="text" id="date-departure" name="text"
                 placeholder="Укажите дату">
             </p>
-            <p class="text-field">На эти даты есть свободные номера. Пока есть.</p>
+            <span class="text-free text-free-showed">На эти даты есть свободные номера. Пока есть.</span>
 
             <ul class="model-list">
               <li class="model-item">
                 <label class="guests">Взрослые:</label>
-                <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество"><svg
-                    width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество">
+                  <svg class="quantity-color" width="14" height="2" viewBox="0 0 14 2"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 2V0h14v2H0Z" fill="#756157" fill-opacity=".3" fill-rule="evenodd" /></svg>
                 </button>
-                <input class="quantity" type="number" placeholder="0" min="1">
+                <input class="quantity" type="number" placeholder="0" min="0">
                 <button class="button-quantity button-plus" type="button" aria-label="Добавить количество">
-                  <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="quantity-color" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#756157" fill-opacity=".3" /></svg>
                 </button>
               </li>
@@ -246,7 +248,8 @@
                 </span>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button">
-                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <defs>
                         <clipPath id="a">
                           <path transform="translate(3 3)" fill="#fff" fill-opacity="0" d="M0 0h20v20H0z" />
@@ -258,16 +261,19 @@
                       </g>
                     </svg>
                   </button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 </span>
-                <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество"><svg
-                    width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество">
+                  <svg class="quantity-color" width="14" height="2" viewBox="0 0 14 2"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 2V0h14v2H0Z" fill="#756157" fill-opacity=".3" fill-rule="evenodd" /></svg>
                 </button>
                 <input class="quantity" type="number" placeholder="0" min="0">
                 <button class="button-quantity button-plus" type="button" aria-label="Добавить количество">
-                  <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="quantity-color" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#756157" fill-opacity=".3" /></svg>
                 </button>
               </li>

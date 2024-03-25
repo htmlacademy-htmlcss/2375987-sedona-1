@@ -699,6 +699,15 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active {
+  opacity: 0.6;
 }
 
 .modal-title {
@@ -716,7 +725,7 @@ body {
   margin: 0;
   display: flex;
   align-items: center;
-  margin-bottom: 2px;
+  margin-bottom: 48px;
 }
 
 .field-date {
@@ -739,6 +748,7 @@ body {
 }
 
 .auth-form-field {
+  position: relative;
   margin: 0;
   padding: 12px 20px 12px 20px;
   border-radius: 4px;
@@ -755,24 +765,54 @@ body {
   background-image: url(../images/icons/date.svg);
   background-repeat: no-repeat;
   background-position: right 17px center;
+  padding-right: 40px;
 }
 
-.text-field {
-  margin: 0;
-  font-family: "PT Sans", sans-serif;
+.auth-form-field:not(:disabled):hover {
+  background-color: #e6e6e6;
+}
+
+.date-inputauth-form-field:not(:placeholder-shown) {
+  background-color: #e6e6e6;
+  outline: 3px solid #000000;
+}
+
+.auth-form-field:disabled {
+  opacity: 0.2;
+}
+
+
+.text-error{
+  display: block;
+  visibility: hidden;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ff5757;
+  position: absolute;
+  top:210px;
+  left:225px;
+  
+}
+.text-error-showed{
+  visibility: visible;
+}
+.text-free{
+  display: block;
+  visibility: hidden;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   color: #333333;
-  text-align: center;
-  margin-bottom: 25px;
-
+  position: absolute;
+  top:310px;
+  left:225px;
 }
-
-.text-color {
-  color: #ff5757;
+.text-free-showed{
+  visibility: visible;
 }
-
 
 .model-list {
   margin: 0;
@@ -820,9 +860,15 @@ body {
   margin: 0 auto;
 }
 
+.button-quantity svg:hover {
+  fill: #000000;
+}
+
 .button-minus {
   border-radius: 4px 0 0 4px;
 }
+
+
 
 .tooltip {
   margin-right: 46px;
@@ -860,7 +906,8 @@ body {
   bottom: -158px;
   display: none;
 }
-.tooltip-text::before{
+
+.tooltip-text::before {
   position: absolute;
   top: -15px;
   right: 120px;
@@ -908,6 +955,19 @@ body {
   padding: 18px 77px 18px 77px;
   box-sizing: border-box;
 }
+
+.button-modal:not(:disabled):hover {
+  background: #68a2ca;
+}
+
+.button-modal:not(:disabled):active {
+  opacity: 0.3;
+}
+
+.button-modal:disabled {
+  background-color: #e5e5e5;
+}
+
 
 /* catalog */
 .header {
