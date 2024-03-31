@@ -238,13 +238,13 @@
             </fieldset>
             <fieldset class="modal-fieldset modal-fieldset-quantity">
               <p class="modal-item">
-                <label class="guests">Взрослые:</label>
+                <label class="guests" for="guests">Взрослые:</label>
                 <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество">
                   <svg class="quantity-color" width="14" height="2" viewBox="0 0 14 2"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 2V0h14v2H0Z" /></svg>
                 </button>
-                <input class="quantity" type="number" placeholder="0" min="0">
+                <input class="quantity" type="number" placeholder="0" min="0" id="guests">
                 <button class="button-quantity button-plus" type="button" aria-label="Добавить количество">
                   <svg class="quantity-color" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -252,7 +252,7 @@
                 </button>
               </p>
               <p class="modal-item">
-                <label class="guests guests-children">Дети:</label>
+                <label class="guests guests-children" for="guests-children">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button">
                   </button>
@@ -265,7 +265,7 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 2V0h14v2H0Z" /></svg>
                 </button>
-                <input class="quantity" type="number" placeholder="0" min="0">
+                <input class="quantity" type="number" placeholder="0" min="0" id="guests-children">
                 <button class="button-quantity button-plus" type="button" aria-label="Добавить количество">
                   <svg class="quantity-color" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
