@@ -173,7 +173,7 @@
             <li class="social-item">
               <a class="footer-social-link footer-social-tw" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграмм</span>
-                <svg aria-hidden="true" focusable="false"  width="18" height="15" viewBox="0 0 18 15"
+                <svg aria-hidden="true" focusable="false" width="18" height="15" viewBox="0 0 18 15"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16.78-.05.84 6.1c-1.09.44-1.09 1.04-.2 1.31l4.09 1.28 9.47-5.97c.45-.28.86-.13.52.17L7.05 9.81l-.28 4.22c.41 0 .59-.19.82-.41l1.99-1.93 4.14 3.05c.76.42 1.31.21 1.5-.7l2.71-12.8c.28-1.11-.42-1.62-1.15-1.29Z" />
@@ -220,21 +220,24 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
-              <label class="field-date" for="date-сheck-in">Дата Заезда:</label>
-              <input class="auth-form-field field" type="text" id="date-сheck-in" name="text"
-                placeholder="Укажите дату">
-            </p>
-            <span class="text-error text-error-showed">Мы не можем отправить вас в прошлое.</span>
-            <p class="field-group">
-              <label class="field-date field-date-departure" for="date-departure">Дата Выезда:</label>
-              <input class="auth-form-field field" type="text" id="date-departure" name="text"
-                placeholder="Укажите дату">
-            </p>
-            <span class="text-free text-free-showed">На эти даты есть свободные номера. Пока есть.</span>
-
-            <fieldset class="model-list">
-              <div class="model-item">
+            <fieldset class="modal-fieldset">
+              <legend class="visually-hidden">Выбрать дату</legend>
+              <label class="field-date">
+                <p class="field-date-text">Дата Заезда:</p>
+                <input class="auth-form-field field" type="text" id="date-сheck-in" name="text"
+                  placeholder="Укажите дату" value="27 апреля 2020">
+                <span class="text-error">Мы не можем отправить вас в прошлое.</span>
+              </label>
+              <label class="field-date">
+                <p class="field-date-text">Дата Выезда:</p>
+                <input class="auth-form-field field" type="text" id="date-сheck-in" name="text"
+                  placeholder="Укажите дату" value="1 сентября 2023">
+                <span class="text-error text-error-showed">На эти даты есть свободные номера. Пока
+                  есть.</span>
+              </label>
+            </fieldset>
+            <fieldset class="modal-fieldset modal-fieldset-quantity">
+              <p class="modal-item">
                 <label class="guests">Взрослые:</label>
                 <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество">
                   <svg class="quantity-color" width="14" height="2" viewBox="0 0 14 2"
@@ -247,30 +250,15 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" /></svg>
                 </button>
-              </div>
-              <div class="model-item">
-                <span class="form-label">
-                  <label class="guests guests-children">Дети:</label>
-                </span>
-                <!-- tooltip  -->
+              </p>
+              <p class="modal-item">
+                <label class="guests guests-children">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button">
-                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <clipPath id="a">
-                          <path transform="translate(3 3)" fill="#fff" fill-opacity="0" d="M0 0h20v20H0z" />
-                        </clipPath>
-                      </defs>
-                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                      <g clip-path="url(#a)">
-                        <path d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#FFF" fill-rule="evenodd" />
-                      </g>
-                    </svg>
                   </button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18
                     лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
                 </span>
                 <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество">
                   <svg class="quantity-color" width="14" height="2" viewBox="0 0 14 2"
@@ -282,10 +270,9 @@
                   <svg class="quantity-color" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" /></svg> </button>
-                    </div>
+              </p>
             </fieldset>
             <button class="button button-modal" type="submit">Найти</button>
-          </form>
         </section>
       </div>
     </div>
