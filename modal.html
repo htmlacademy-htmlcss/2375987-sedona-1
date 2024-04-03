@@ -237,8 +237,9 @@
               </label>
             </fieldset>
             <fieldset class="modal-fieldset modal-fieldset-quantity">
-              <p class="modal-item">
-                <label class="guests" for="guests">Взрослые:</label>
+              <legend class="visually-hidden">Выбрать количество гостей</legend>
+              <label class="field-date-guest" for="guests">
+                <p class="field-date-text">Взрослые:</p>
                 <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество">
                   <svg class="quantity-color" width="14" height="2" viewBox="0 0 14 2"
                     xmlns="http://www.w3.org/2000/svg">
@@ -250,16 +251,17 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" /></svg>
                 </button>
-              </p>
-              <p class="modal-item">
-                <label class="guests guests-children" for="guests-children">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
-                  </button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
-                    которых от 6 до 18
-                    лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
+              </label>
+              <label class="field-date-guest" for="guests-children">
+                <p class="field-date-text children" for="guests-children">Дети:
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+                    <span class="tooltip-text" id="tooltip-label-date">Укажите количество детей,
+                      которые будут с вами, возраст
+                      которых от 6 до 18
+                      лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </p>
                 <button class="button-quantity button-minus" type="button" aria-label="Уменьшить количество">
                   <svg class="quantity-color" width="14" height="2" viewBox="0 0 14 2"
                     xmlns="http://www.w3.org/2000/svg">
@@ -270,7 +272,7 @@
                   <svg class="quantity-color" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" /></svg> </button>
-              </p>
+              </label>
             </fieldset>
             <button class="button button-modal" type="submit">Найти</button>
         </section>
