@@ -413,6 +413,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
+  flex-wrap:wrap;
 }
 
 .services-item {
@@ -833,7 +834,7 @@ body {
 
 .modal-fieldset-quantity {
   display: grid;
-  grid-template-columns: 247px 247px;
+  grid-template-columns: 247px 242px;
   gap: 88px;
   align-items: center;
   margin-bottom: 48px;
@@ -844,38 +845,43 @@ body {
   grid-template-columns: auto 40px 31px 40px;
   align-items: center;
 }
-.children{
-  gap:10px;
+
+.children {
+  gap: 10px;
 }
 
 .button-quantity {
+  position: relative;
   border: none;
   background-color: #f2f2f2;
-  padding: 14px 10px;
   width: 40px;
   height: 48px;
   box-sizing: border-box;
   cursor: pointer;
+  padding: 0;
+  outline: 0;
 }
 
-.button-quantity svg {
-  display: block;
-  margin: 0 auto;
-  fill: #000000;
+.button-quantity:after,
+.button-quantity:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-quantity:before {
   opacity: 0.3;
-  cursor: pointer;
 }
 
-.button-quantity:not(disabled):hover svg {
-  opacity: 1;
-}
-
-.button-quantity:not(disabled):active svg {
-  opacity: 0.3;
-}
-
-.button-quantity:disabled svg {
-  opacity: 0.1;
+.button-minus::before {
+  border-radius: 4px 0 0 4px;
+  background-image: url(../images/icons/mines-button.svg);
 }
 
 .button-minus {
@@ -886,11 +892,24 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+.button-plus::before {
+  border-radius: 0 4px 4px 0;
+  background-image: url(../images/icons/plus-button.svg);
+}
+
+.button-quantity:hover::before {
+  opacity: 1;
+}
+
+.button-quantity:focus::before {
+  outline: auto;
+}
+
 .quantity {
   width: 31px;
   border: none;
   background: #f2f2f2;
-  padding: 14px 10px 14px 10px;
+  padding: 14px 10px;
   box-sizing: border-box;
   color: #000000;
   font-family: inherit;
@@ -928,13 +947,13 @@ body {
   padding: 0;
   margin: 0;
   display: block;
-   width: 26px;
-  height: 26px; 
+  width: 26px;
+  height: 26px;
   background-color: #83b3d3;
   background-image: url(../images/icons/info-button.svg);
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 50%; 
+  border-radius: 50%;
 
 }
 
@@ -1115,7 +1134,7 @@ body {
   align-items: flex-start;
   margin: 0;
   padding: 0;
-  gap:19px;
+  gap: 19px;
 }
 
 .catalog-filter-item {
@@ -1311,7 +1330,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  gap:32px;
+  gap: 32px;
   margin-bottom: 6px;
 }
 
@@ -1651,6 +1670,7 @@ body {
   margin: 0;
   padding: 0;
   gap: 8px;
+  flex-wrap:wrap;
 }
 
 .pagination-link {
