@@ -186,7 +186,7 @@
                   <path fill="none" d="M0 0h22v17H0z" />
                   <path
                     d="M18.6 0H3.17C1.31 0 0 1.59 0 3.4v10.09C0 15.4 1.31 17 3.17 17h15.65c1.64 0 3.18-1.6 3.18-3.4V3.4C21.78 1.59 20.46 0 18.6 0ZM7.66 12.53V4.46l7.33 4.04-7.33 4.03Z" />
-                  </svg>
+                </svg>
               </a>
             </li>
           </ul>
@@ -221,13 +221,13 @@
             <fieldset class="modal-fieldset">
               <legend class="visually-hidden">Выбрать дату</legend>
               <div class="field-date">
-                <p class="field-date-text">Дата Заезда:</p>
+                <label class="field-date-text" for="date-сheck-in">Дата Заезда:</label>
                 <input class="auth-form-field field" type="text" id="date-сheck-in" name="text"
                   placeholder="Укажите дату" value="27 апреля 2020" required>
                 <span class="text-error">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="field-date">
-                <p class="field-date-text">Дата Выезда:</p>
+                <label class="field-date-text" for="date-сheck-out">Дата Выезда:</label>
                 <input class="auth-form-field field" type="text" id="date-сheck-out" name="text"
                   placeholder="Укажите дату" value="1 сентября 2023" required>
                 <span class="text-error text-error-showed">На эти даты есть свободные номера. Пока
@@ -242,7 +242,9 @@
                 <button class="button-quantity button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
-                <input class="quantity" type="number" placeholder="0" min="1" id="guests" value="2" required>
+                <label for="guests">
+                  <input class="quantity" type="number" placeholder="0" min="1" id="guests" value="2" required>
+                </label>
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Добавить количество</span>
                 </button>
@@ -260,7 +262,9 @@
                 <button class="button-quantity button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
-                <input class="quantity" type="number" placeholder="0" min="0" id="guests-children" value="2" required>
+                <label for="guests-children">
+                  <input class="quantity" type="number" placeholder="0" min="0" id="guests-children" value="2" required>
+                </label>
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Добавить количество</span>
                 </button>
