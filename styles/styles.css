@@ -862,8 +862,9 @@ body {
   align-items: center;
 }
 
-.children {
-  gap: 10px;
+.field-date-guest-children{
+  position: relative;
+  padding-right: 1px;
 }
 
 .button-quantity {
@@ -959,8 +960,9 @@ body {
 }
 
 .tooltip {
-  position: relative;
-}
+    padding-left: 10px;
+    padding-right: 48px;
+  }
 
 .tooltip-toggle {
   border: none;
