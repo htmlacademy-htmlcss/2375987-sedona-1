@@ -601,7 +601,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  max-width: 400px;
+  max-width: 235px;
 }
 
 .newsletter-button:not(:disabled):hover {
@@ -933,7 +933,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  z-index: 1;
   cursor: pointer;
 }
 
@@ -1128,6 +1127,7 @@ body {
 }
 
 .catalog-filter-group {
+  width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1166,8 +1166,6 @@ body {
 
 .control {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .control-input {
@@ -1186,15 +1184,16 @@ body {
   cursor: pointer;
 }
 
-.control-input-radio {
-  border-radius: 12px;
-}
 
 .control-input-checkbox:checked {
   background-image: url(../images/icons/check-mark.svg);
   background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.control-input-radio {
+  border-radius: 12px;
 }
 
 .control-input-radio:checked::before {
@@ -1212,7 +1211,7 @@ body {
 }
 
 .control:disabled {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .filter-container {
@@ -1344,14 +1343,17 @@ body {
 }
 
 .range-toggle:hover {
-  border-radius: 5px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
-  border: 2px solid rgb(131, 179, 211);
   border-radius: 5px;
+  border: 2px solid #83b3d3;
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.range-toggle:disabled {
+  background-color: #e5e5e5;
 }
 
 .button-container {
