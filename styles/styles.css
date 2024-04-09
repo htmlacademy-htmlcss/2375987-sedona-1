@@ -116,7 +116,7 @@ body {
   content: "";
   background-color: #756257;
   height: 2px;
-  bottom: -2px;
+  bottom: -1px;
   left: 16px;
   right: 16px;
   ;
@@ -564,7 +564,6 @@ body {
 
 .newsletter-form {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -859,7 +858,6 @@ body {
 .field-date-guest {
   display: grid;
   grid-template-columns: auto 40px 31px 40px;
-  align-items: center;
 }
 
 .field-date-guest-children{
@@ -897,7 +895,6 @@ body {
 }
 
 .button-minus::before {
-  border-radius: 4px 0 0 4px;
   background-image: url(../images/icons/mines-button.svg);
 }
 
@@ -910,20 +907,20 @@ body {
 }
 
 .button-plus::before {
-  border-radius: 0 4px 4px 0;
   background-image: url(../images/icons/plus-button.svg);
 }
 
-.button-quantity:hover::before {
+.button-quantity:hover::before{
   opacity: 1;
 }
 
-.button-quantity:focus::before {
+.button-quantity:focus::after{
   outline: auto;
 }
 
 .quantity {
   width: 31px;
+  height: 48px;
   border: none;
   background: #f2f2f2;
   padding: 14px 10px;
@@ -1182,6 +1179,7 @@ body {
   border-radius: 5px;
   margin-right: 16px;
   cursor: pointer;
+  min-width: 20px;
 }
 
 
@@ -1561,6 +1559,7 @@ body {
   object-position: center;
   margin-bottom: 16px;
   display: block;
+  background-color: #698fb4;
 }
 
 
