@@ -1281,13 +1281,13 @@ body {
   line-height: 24px;
 }
 
-.range-input::placeholder {
+ .range-input::placeholder {
   color: #000000;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-}
+} 
 
 
 .range-input:hover {
