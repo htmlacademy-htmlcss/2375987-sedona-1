@@ -41,7 +41,7 @@ body {
   background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* visually-hidden  */
@@ -569,7 +569,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   cursor: pointer;
 }
 
@@ -586,7 +586,7 @@ body {
 }
 
 .newsletter-button {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   background-color: #82b3d3;
   padding: 8px 50px;
   font-size: 20px;
@@ -927,6 +927,9 @@ body {
 .quantity:hover {
   opacity: 0.7;
 }
+.quantity:disabled{
+  opacity: 0.2;
+}
 
 .quantity[type="number"]::-webkit-inner-spin-button,
 .quantity[type="number"]::-webkit-outer-spin-button {
@@ -1232,11 +1235,11 @@ body {
   background-color: #f2f2f2;
   position: relative;
   margin-right: 2px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .catalog-filter-label-right {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .range-container-scale {
@@ -1256,12 +1259,12 @@ body {
   line-height: 24px;
   cursor: pointer;
   border: none;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   background-color: transparent;
 }
 
 .range-input-right {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .range-text {
@@ -1271,7 +1274,7 @@ body {
   right: 20px;
   width: 20px;
   height: 24px;
-  color: rgb(170, 170, 170);
+  color: #aaaaaa;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -1289,10 +1292,6 @@ body {
 
 .range-input:hover {
   background-color: #e6e6e6;
-}
-
-.range-input:placeholder-shown {
-  background-color: #f2f2f2
 }
 
 .range-input:disabled {
@@ -1334,13 +1333,13 @@ body {
 }
 
 .range-toggle:hover {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
   border-radius: 5px;
   border: 2px solid #83b3d3;
-  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 .range-toggle:disabled {
