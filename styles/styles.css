@@ -160,20 +160,16 @@ body {
 
 .favourites-hotels {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 20px;
-  right: -20px;
-  top: 11px;
-  bottom: -11px;
-  color: #ffffff;
-  border-radius: 10px;
-  background-color: #7db54f;
   font-family: inherit;
   font-size: 10px;
   font-weight: 400;
-  text-align: center;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  line-height: 10px;
+  background-color: #7db54f;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 20px;
+  left: 20px;
+  top: 11px;
 }
 
 .nobullet {
