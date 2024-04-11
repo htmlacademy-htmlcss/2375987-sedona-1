@@ -211,7 +211,7 @@ body {
 }
 
 .navigation-button:disabled {
-  opacity: 0.3;;
+  opacity: 0.3;
 }
 
 .main-container {
@@ -692,7 +692,7 @@ body {
   fill: #756157;
 }
 
-.link-htmlacademy:active svg{
+.link-htmlacademy:active svg {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -708,9 +708,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
- .modal-container-close {
+/* .modal-container-close {
   display: none;
-} 
+}  */
 
 .modal {
   position: relative;
@@ -747,6 +747,10 @@ body {
 
 .modal-close-button:active {
   opacity: 0.6;
+}
+
+.modal-close-button:disabled {
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -910,6 +914,10 @@ body {
   outline: auto;
 }
 
+.button-quantity:disabled {
+  opacity: 0.3;
+}
+
 .quantity {
   width: 31px;
   height: 48px;
@@ -1031,7 +1039,7 @@ body {
 }
 
 .button-modal:disabled {
-  opacity:0.3;
+  opacity: 0.3;
 }
 
 /* catalog */
@@ -1206,9 +1214,14 @@ body {
   opacity: 0.6;
 }
 
-.control:disabled {
+.control:active {
   opacity: 0.3;
 }
+
+.control-input:disabled{
+  opacity: 0.3;
+}
+
 
 .filter-container {
   margin-left: auto;
@@ -1393,7 +1406,7 @@ body {
 }
 
 .button-reset:not(:disabled):active {
-  color:rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .button-reset:disabled {
@@ -1508,7 +1521,8 @@ body {
   border: 2px solid #000000;
   background-color: none;
 }
-.button-light:disabled{
+
+.button-light:disabled {
   opacity: 0.3;
 }
 
