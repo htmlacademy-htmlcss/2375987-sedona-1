@@ -629,17 +629,13 @@ body {
   flex-wrap: wrap;
 }
 
-.social-item {
+.footer-social-link {
   width: 47px;
   height: 40px;
+  fill: #83b3d3;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer-social-link {
-  fill: #83b3d3;
-  display: inline-block;
 }
 
 .footer-social-link:hover svg {
@@ -692,13 +688,12 @@ body {
   margin-top: 4px;
 }
 
-.link-htmlacademy svg:hover {
+.link-htmlacademy:hover svg {
   fill: #756157;
 }
 
-.link-htmlacademy svg:active {
-  fill: #756157;
-  opacity: 0.3;
+.link-htmlacademy:active svg{
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* modal */
