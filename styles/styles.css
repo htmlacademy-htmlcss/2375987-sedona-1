@@ -710,6 +710,9 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
+/* .modal-container-close {
+  display: none;
+} */
 
 .modal {
   position: relative;
@@ -1583,7 +1586,6 @@ body {
   background-image: url("../images/icons/star.svg");
   background-size: contain;
   background-repeat: space no-repeat;
-  width: 18px;
   height: 17px;
 }
 
