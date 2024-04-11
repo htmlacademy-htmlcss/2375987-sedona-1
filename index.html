@@ -187,7 +187,7 @@
                   <path fill="none" d="M0 0h22v17H0z" />
                   <path
                     d="M18.6 0H3.17C1.31 0 0 1.59 0 3.4v10.09C0 15.4 1.31 17 3.17 17h15.65c1.64 0 3.18-1.6 3.18-3.4V3.4C21.78 1.59 20.46 0 18.6 0ZM7.66 12.53V4.46l7.33 4.04-7.33 4.03Z" />
-                  </svg>
+                </svg>
               </a>
             </li>
           </ul>
@@ -211,7 +211,72 @@
         </section>
       </div>
     </footer>
+    <!-- modal -->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal-fieldset">
+              <legend class="visually-hidden">Выбрать дату</legend>
+              <div class="field-date">
+                <label class="field-date-text" for="date-сheck-in">Дата Заезда:</label>
+                <input class="auth-form-field field" type="text" id="date-сheck-in" name="date-сheck-in"
+                  placeholder="Укажите дату" value="27 апреля 2020" required>
+                <span class="text-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <div class="field-date">
+                <label class="field-date-text" for="date-сheck-out">Дата Выезда:</label>
+                <input class="auth-form-field field" type="text" id="date-сheck-out" name="date-сheck-out"
+                  placeholder="Укажите дату" value="1 сентября 2023" required>
+                <span class="text-error text-error-showed">На эти даты есть свободные номера. Пока
+                  есть.</span>
+              </div>
+            </fieldset>
+
+            <fieldset class="modal-fieldset modal-fieldset-quantity">
+              <legend class="visually-hidden">Выбрать количество гостей</legend>
+              <div class="field-date-guest">
+                <label class="field-date-text" for="guests">Взрослые:</label>
+                <button class="button-quantity button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input class="quantity" type="number" name="guests" placeholder="0" min="1" id="guests" value="2"
+                  required>
+                <button class="button-quantity button-plus" type="button">
+                  <span class="visually-hidden">Добавить количество</span>
+                </button>
+              </div>
+              <div class="field-date-guest">
+                <label class="field-date-text field-date-guest-children" for="guests-children">Дети:
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+                    <span class="tooltip-text" id="tooltip-label-date">Укажите количество детей,
+                      которые будут с вами, возраст
+                      которых от 6 до 18
+                      лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </label>
+                <button class="button-quantity button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input class="quantity" type="number" name="guests-children" placeholder="0" min="0"
+                  id="guests-children" value="2" required>
+                <button class="button-quantity button-plus" type="button">
+                  <span class="visually-hidden">Добавить количество</span>
+                </button>
+              </div>
+            </fieldset>
+            <button class="button button-modal" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>
