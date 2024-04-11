@@ -113,7 +113,7 @@ body {
 .navigation-link[aria-current="page"]::after {
   position: absolute;
   display: block;
-  content: " ";
+  content: "";
   background-color: #756257;
   height: 2px;
   bottom: -1px;
@@ -240,7 +240,7 @@ body {
 }
 
 .main-bunner::after {
-  content: " ";
+  content: "";
   display: block;
   background-image: url("../images/icons/ornament-bunner.svg");
   background-position: center;
@@ -364,7 +364,7 @@ body {
 }
 
 .decorative-strip::after {
-  content: " ";
+  content: "";
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -435,7 +435,7 @@ body {
 }
 
 .servis-title-icon::before {
-  content: " ";
+  content: "";
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -871,7 +871,7 @@ body {
 .button-quantity:after,
 .button-quantity:before {
   position: absolute;
-  content: " ";
+  content: "";
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -995,7 +995,7 @@ body {
 
 .tooltip-text::before {
   position: absolute;
-  content: " ";
+  content: "";
   top: -9px;
   right: 120px;
   width: 19px;
@@ -1086,7 +1086,7 @@ body {
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-  content: " ";
+  content: "";
   display: block;
   background-image: url("../images/icons/breadcrumbs-arrow.svg");
   background-size: contain;
@@ -1269,7 +1269,7 @@ body {
 
 .range-text {
   position: absolute;
-  content: " ";
+  content: "";
   top: 12px;
   right: 20px;
   width: 20px;
@@ -1287,6 +1287,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  opacity: 1;
 } 
 
 
@@ -1470,7 +1471,7 @@ body {
 }
 
 .button-light::before {
-  content: " ";
+  content: "";
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1577,7 +1578,7 @@ body {
 }
 
 .star::before {
-  content: " ";
+  content: "";
   display: block;
   background-image: url("../images/icons/star.svg");
   background-size: contain;
