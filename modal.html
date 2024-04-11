@@ -221,13 +221,13 @@
               <legend class="visually-hidden">Выбрать дату</legend>
               <div class="field-date">
                 <label class="field-date-text" for="date-сheck-in">Дата Заезда:</label>
-                <input class="auth-form-field field" type="text" id="date-сheck-in" name="text"
+                <input class="auth-form-field field" type="text" id="date-сheck-in" name="date-сheck-in"
                   placeholder="Укажите дату" value="27 апреля 2020" required>
                 <span class="text-error">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="field-date">
                 <label class="field-date-text" for="date-сheck-out">Дата Выезда:</label>
-                <input class="auth-form-field field" type="text" id="date-сheck-out" name="text"
+                <input class="auth-form-field field" type="text" id="date-сheck-out" name="date-сheck-out"
                   placeholder="Укажите дату" value="1 сентября 2023" required>
                 <span class="text-error text-error-showed">На эти даты есть свободные номера. Пока
                   есть.</span>
@@ -237,19 +237,17 @@
             <fieldset class="modal-fieldset modal-fieldset-quantity">
               <legend class="visually-hidden">Выбрать количество гостей</legend>
               <div class="field-date-guest">
-                <p class="field-date-text">Взрослые:</p>
+                <label class="field-date-text" for="guests">Взрослые:</label>
                 <button class="button-quantity button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
-                <label for="guests">
-                  <input class="quantity" type="number" placeholder="0" min="1" id="guests" value="2" required>
-                </label>
+                  <input class="quantity" type="number" name="guests" placeholder="0" min="1" id="guests" value="2" required>
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Добавить количество</span>
                 </button>
               </div>
               <div class="field-date-guest">
-                <p class="field-date-text field-date-guest-children">Дети:
+                <label class="field-date-text field-date-guest-children" for="guests-children">Дети:
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
                     <span class="tooltip-text" id="tooltip-label-date">Укажите количество детей,
@@ -257,13 +255,11 @@
                       которых от 6 до 18
                       лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
-                </p>
+                </label>
                 <button class="button-quantity button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
-                <label for="guests-children">
-                  <input class="quantity" type="number" placeholder="0" min="0" id="guests-children" value="2" required>
-                </label>
+                  <input class="quantity" type="number"  name="guests-children" placeholder="0" min="0" id="guests-children" value="2" required>
                 <button class="button-quantity button-plus" type="button">
                   <span class="visually-hidden">Добавить количество</span>
                 </button>
