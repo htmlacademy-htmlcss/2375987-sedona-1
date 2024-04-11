@@ -710,7 +710,8 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
- /* .modal-container-close {
+
+/* .modal-container-close {
   display: none;
 }  */
 
@@ -930,7 +931,8 @@ body {
 .quantity:hover {
   opacity: 0.7;
 }
-.quantity:disabled{
+
+.quantity:disabled {
   opacity: 0.2;
 }
 
@@ -1006,8 +1008,8 @@ body {
   background-image: url("../images/icons/tooltip-text.svg");
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
   display: block;
 }
 
@@ -1284,17 +1286,21 @@ body {
   line-height: 24px;
 }
 
- .range-input::placeholder {
+.range-input::placeholder {
   color: #000000;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   opacity: 1;
-} 
+}
 
 
 .range-input:hover {
+  background-color: #e6e6e6;
+}
+
+.range-input:focus-visible {
   background-color: #e6e6e6;
 }
 
