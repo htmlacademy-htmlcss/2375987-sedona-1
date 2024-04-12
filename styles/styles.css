@@ -915,7 +915,7 @@ body {
   background-image: url("../images/icons/plus-button.svg");
 }
 
-.button-quantity:hover::before {
+.button-quantity:not(:disabled):hover::before {
   opacity: 1;
 }
 
