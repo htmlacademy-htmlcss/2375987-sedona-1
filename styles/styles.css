@@ -709,7 +709,7 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+.modal-container:not(.modal-container--open) {
   display: none;
 }
 
