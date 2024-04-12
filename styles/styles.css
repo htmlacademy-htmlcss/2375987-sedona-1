@@ -695,6 +695,7 @@ body {
 .link-htmlacademy:hover svg {
   fill: #756157;
 }
+
 .link-htmlacademy:focus svg {
   fill: #756157;
 }
@@ -715,7 +716,7 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container:not(.modal-container--open) {
+ .modal-container:not(.modal-container--open) {
   display: none;
 } 
 
@@ -961,6 +962,11 @@ body {
   -moz-appearance: textfield;
 }
 
+.wrapper-children {
+  display: flex;
+  align-items: center;
+}
+
 .tooltip-toggle {
   border: none;
   background-color: #ffffff;
@@ -996,20 +1002,21 @@ body {
 
 .tooltip-text {
   border-radius: 10px;
-  background: #333333;
+  background-color: #333333;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  padding: 18px 18px 18px 22px;
-  width: 256px;
-  height: 143px;
+  padding: 22px 18px 18px 22px;
+  width: 258px;
+  height: 146px;
   box-sizing: border-box;
   position: absolute;
   z-index: 1;
-  left: -56px;
-  bottom: -145px;
+  right: 112px;
+  top: 408px;
   display: none;
 }
 
@@ -1227,7 +1234,7 @@ body {
 
 .control:not(:disabled):active {
   opacity: 0.3;
-} 
+}
 
 .control:has(.control-input:disabled) {
   opacity: 0.3;
