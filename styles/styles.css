@@ -1221,11 +1221,11 @@ body {
   margin: 5px;
 }
 
-.control:hover {
+.control:not(:disabled):hover {
   opacity: 0.6;
 }
 
-.control:active {
+.control:not(:disabled):active {
   opacity: 0.3;
 } 
 
