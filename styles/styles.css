@@ -212,8 +212,9 @@ body {
 }
 
 .navigation-button:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .main-container {
@@ -522,8 +523,9 @@ body {
 }
 
 .button-promo:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* footer */
@@ -610,8 +612,9 @@ body {
 }
 
 .newsletter-button:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* social */
@@ -1060,8 +1063,9 @@ body {
 }
 
 .button-modal:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* catalog */
@@ -1416,8 +1420,9 @@ body {
 }
 
 .button-submit:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .button-reset {
@@ -1436,8 +1441,8 @@ body {
 }
 
 .button-reset:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  color: #ffffff;
 }
 
 /* search wrapper */
@@ -1687,8 +1692,9 @@ body {
 }
 
 .hotel-card-button:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .hotel-card-button-green {
@@ -1710,8 +1716,9 @@ body {
 }
 
 .hotel-card-button-green:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .hotel-card-button-blue {
@@ -1734,8 +1741,9 @@ body {
 }
 
 .hotel-card-button-blue:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* pagination */
