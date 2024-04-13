@@ -212,8 +212,9 @@ body {
 }
 
 .navigation-button:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .main-container {
@@ -522,8 +523,9 @@ body {
 }
 
 .button-promo:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* footer */
@@ -610,8 +612,9 @@ body {
 }
 
 .newsletter-button:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* social */
@@ -646,6 +649,10 @@ body {
   fill: #68a2ca;
 }
 
+.footer-social-link:focus svg {
+  fill: #68a2ca;
+}
+
 .footer-social-link:active svg {
   fill: #68a2ca;
   opacity: 0.3;
@@ -670,6 +677,10 @@ body {
 }
 
 .contacts-phone:hover {
+  color: #756157;
+}
+
+.contacts-phone:focus {
   color: #756157;
 }
 
@@ -716,9 +727,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
- .modal-container:not(.modal-container--open) {
+.modal-container:not(.modal-container--open) {
   display: none;
-} 
+}
 
 .modal {
   position: relative;
@@ -1056,8 +1067,9 @@ body {
 }
 
 .button-modal:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* catalog */
@@ -1412,8 +1424,9 @@ body {
 }
 
 .button-submit:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .button-reset {
@@ -1432,8 +1445,8 @@ body {
 }
 
 .button-reset:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  color: #ffffff;
 }
 
 /* search wrapper */
@@ -1683,8 +1696,9 @@ body {
 }
 
 .hotel-card-button:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .hotel-card-button-green {
@@ -1706,8 +1720,9 @@ body {
 }
 
 .hotel-card-button-green:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .hotel-card-button-blue {
@@ -1730,8 +1745,9 @@ body {
 }
 
 .hotel-card-button-blue:disabled {
-  opacity: 0.3;
   cursor: not-allowed;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* pagination */
