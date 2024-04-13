@@ -680,6 +680,10 @@ body {
   color: #756157;
 }
 
+.contacts-phone:focus {
+  color: #756157;
+}
+
 .contacts-phone:active {
   color: #756157;
   opacity: 0.3;
